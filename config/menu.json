@@ -1,31 +1,17 @@
 {
   "main": [
     {
-      "name": "Home",
+      "name": "Inicio",
       "url": "/"
     },
     {
-      "name": "About",
+      "name": "Sobre Nosotros",
       "url": "/about"
     },
-    {
-      "name": "Elements",
-      "url": "/elements"
-    },
+   
     {
       "name": "Contact",
       "url": "/contact"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Categories",
-          "url": "/categories"
-        }
-      ]
     }
   ],
   "footer": [

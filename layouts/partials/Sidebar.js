@@ -88,7 +88,7 @@ const Sidebar = ({ posts, categories, className }) => {
       {/* featured widget */}
       {featured_posts.enable && (
         <div className="mt-6 rounded border border-border p-6 dark:border-darkmode-border">
-          <h4 className="section-title mb-12 text-center">Featured</h4>
+          <h4 className="section-title mb-12 text-center">Posts del blog</h4>
           <div className="mb-12 flex items-center justify-center">
             <button
               className={`btn px-5 py-2 ${
@@ -96,7 +96,7 @@ const Sidebar = ({ posts, categories, className }) => {
               }`}
               onClick={() => setShowRecent(false)}
             >
-              Featured
+              Destacados
             </button>
             <button
               className={`btn ml-3  px-5 py-2 ${
@@ -104,7 +104,7 @@ const Sidebar = ({ posts, categories, className }) => {
               }`}
               onClick={() => setShowRecent(true)}
             >
-              Recent
+              Recientes
             </button>
           </div>
           {showRecent
@@ -197,12 +197,12 @@ const Sidebar = ({ posts, categories, className }) => {
             )}
           />
           <p className="text-xs">
-            By Singing Up, You Agree To
+            Necesitas aprobar nuestras politicas de privacidad para enviar
             <Link
               href={newsletter.privacy_policy_page}
               className="ml-1 text-primary"
             >
-              Privacy Policy
+              Politicas de Privacidad
             </Link>
           </p>
         </div>

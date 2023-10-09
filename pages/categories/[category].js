@@ -14,7 +14,7 @@ const Category = ({ postsByCategories, category, posts, categories }) => {
       <div className="section mt-16">
         <div className="container">
           <h1 className="h2 mb-12">
-            Showing posts from
+            Mostrando posts sobre
             <span className="section-title ml-1 inline-block capitalize">
               {category.replace("-", " ")}
             </span>

@@ -1,19 +1,19 @@
 ---
 banner:
-  title: Welcome **!**
-  title_small: "to John Bravo's Blog"
-  content: Are Developer and recently started your own business Already made website to ensure presence wants to develop.
+  title: Bienvenidos **!**
+  title_small: "a Top Ten Product´s Blog"
+  content: Aquí encontrarás diariamente los productos más vendidos y populares de plataformas de comercio electrónico como Amazon, eBay, Alibaba y muchos más a partir de las 12 am.
   image_enable: true
-  image: /images/banner-author.png
+  image: /images/heroimage.png
   button:
     enable: true
-    label: Know About Me
+    label: Sobre Nosotros
     link: /about
     rel: ""
 
 featured_posts:
   enable: true
-  title: Featured Posts
+  title: Publicaciones destacadas
 
 promotion:
   enable: true
@@ -21,7 +21,7 @@ promotion:
   link: "#"
 
 recent_posts:
-  title: Recent Posts
+  title: Publicaciones Recientes
   enable: true
 
 ---

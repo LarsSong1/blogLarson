@@ -13,7 +13,7 @@ const Categories = ({ categories }) => {
     <Base title={"categories"}>
       <section className="section pt-0">
         {markdownify(
-          "Categories",
+          "Categorias",
           "h1",
           "h2 mb-16 bg-theme-light dark:bg-darkmode-theme-dark py-12 text-center lg:text-[55px]"
         )}

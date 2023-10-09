@@ -8,10 +8,13 @@ import { getListPage, getSinglePage } from "@lib/contentParser";
 import { getTaxonomy } from "@lib/taxonomyParser";
 import dateFormat from "@lib/utils/dateFormat";
 import { sortByDate } from "@lib/utils/sortFunctions";
-import { markdownify } from "@lib/utils/textConverter";
+import { markdownify, humanize } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { FaRegCalendar } from "react-icons/fa";
 const { blog_folder, pagination } = config.settings;
+
+
+
 
 const Home = ({
   banner,
@@ -50,26 +53,26 @@ const Home = ({
               </div>
               {markdownify(banner.content, "p", "mt-4")}
               {banner.button.enable && (
-                  <Link
-                    className="btn btn-primary mt-6"
-                    href={banner.button.link}
-                    rel={banner.button.rel}
-                  >
-                    {banner.button.label}
-                  </Link>
+                <Link
+                  className="btn btn-primary mt-6"
+                  href={banner.button.link}
+                  rel={banner.button.rel}
+                >
+                  {banner.button.label}
+                </Link>
               )}
             </div>
             {banner.image_enable && (
-                <div className="col-9 lg:col-6">
-                  <ImageFallback
-                    className="mx-auto object-contain"
-                    src={banner.image}
-                    width={548}
-                    height={443}
-                    priority={true}
-                    alt="Banner Image"
-                  />
-                </div>
+              <div className="col-9 lg:col-6">
+                <ImageFallback
+                  className="mx-auto object-contain"
+                  src={banner.image}
+                  width={548}
+                  height={443}
+                  priority={true}
+                  alt="Banner Image"
+                />
+              </div>
             )}
           </div>
         </div>
@@ -78,6 +81,26 @@ const Home = ({
       {/* Home main */}
       <section className="section">
         <div className="container">
+          {/* filtros */}
+          <ul className="row">
+            <h2 className="section-title">Filtros</h2>
+            {categories.map((category, i) => (
+              <li
+                key={`category-${i}`}
+                className="mt-4 block lg:col-4 xl:col-3"
+              >
+                
+                <Link
+                  href={`/categories/${category.name}`}
+                  className="flex w-full items-center justify-center rounded-lg bg-orange-200 px-4 py-4 font-bold text-dark transition hover:bg-primary hover:text-white  dark:bg-zinc-800 dark:text-darkmode-light dark:hover:bg-primary dark:hover:text-white"
+                >
+                  
+
+                  {humanize(category.name)} ({category.posts})
+                </Link>
+              </li>
+            ))}
+          </ul>
           <div className="row items-start">
             <div className="mb-12 lg:mb-0 lg:col-8">
               {/* Featured posts */}
@@ -94,10 +117,9 @@ const Home = ({
                           .slice(1, featuredPosts.length)
                           .map((post, i, arr) => (
                             <div
-                              className={`mb-6 flex items-center pb-6 ${
-                                i !== arr.length - 1 &&
+                              className={`mb-6 flex items-center pb-6 ${i !== arr.length - 1 &&
                                 "border-b border-border dark:border-darkmode-border"
-                              }`}
+                                }`}
                               key={`key-${i}`}
                             >
                               {post.frontmatter.image && (
