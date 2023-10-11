@@ -14,9 +14,9 @@ const Contact = ({ data }) => {
         <div className="row relative pb-16">
           <ImageFallback
             className="-z-[1] object-cover object-top"
-            src={"/images/map.svg"}
+            src={"/images/moda y tech.svg"}
             fill="true"
-            alt="map bg"
+            alt="moda y tecnologia"
             priority={true}
           />
           <div className="lg:col-6">
@@ -28,9 +28,9 @@ const Contact = ({ data }) => {
           </div>
           <div className="contact-form-wrapper rounded border border-border p-6 dark:border-darkmode-border lg:col-6">
             <h2>
-              Send Us A
+              Enviame un
               <span className="ml-1.5 inline-flex items-center text-primary">
-                Message
+                Mensaje
                 <BsArrowRightShort />
               </span>
             </h2>
@@ -41,7 +41,7 @@ const Contact = ({ data }) => {
             >
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="name">
-                  Full name
+                  Nombre Completo
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -50,13 +50,13 @@ const Contact = ({ data }) => {
                   className="form-input w-full"
                   name="name"
                   type="text"
-                  placeholder="Thomas Milano"
+                  placeholder="Alejandro P"
                   required
                 />
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="email">
-                  Email Address
+                  Correo Electrónico
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -65,13 +65,13 @@ const Contact = ({ data }) => {
                   className="form-input w-full"
                   name="email"
                   type="email"
-                  placeholder="example@gmail.com"
+                  placeholder="ejemplo@gmail.com"
                   required
                 />
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="subject">
-                  Subject
+                  Asunto
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
@@ -80,27 +80,27 @@ const Contact = ({ data }) => {
                   className="form-input w-full"
                   name="subject"
                   type="text"
-                  placeholder="Blog advertisement"
+                  placeholder="Sobre el Blog"
                   required
                 />
               </div>
               <div className="mb-6">
                 <label className="mb-2 block font-secondary" htmlFor="message">
-                  Your Message Here
+                  Mensaje
                   <small className="font-secondary text-sm text-primary">
                     *
                   </small>
                 </label>
                 <textarea
                   className="form-textarea w-full"
-                  placeholder="Hello I’m Mr ‘x’ from………….."
+                  placeholder="Hola Soy ‘X’ de………….."
                   rows="7"
                 />
               </div>
               <input
                 className="btn btn-primary"
                 type="submit"
-                value="Send Now"
+                value="Enviar"
               />
             </form>
           </div>

@@ -1,36 +1,32 @@
 ---
-title: About The Author
+title: Sobre el Autor
 image: /images/author.png
 description: "meta description"
 layout: about
 education:
-  title: Formal Education
+  title: Educación Formal
   degrees:
-    - university: "Southeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Northeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Easteast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
-    - university: "Southeast University"
-      content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"  
+    - university: "Unidad Educativa Otto Arosemena"
+      content: "1985 • 1991 • Escuela"
+    - university: "Unidad Educativa Santa Elena"
+      content: "1985 • 2019 • Colegío"
+    - university: "Universidad Estatal de Milagro"
+      content: "2021 • 2025 • En curso"
+   
 
 experience:
-  title: Work Experience
+  title: Experiencia Laboral
   list:
-    - Best Writer Award
-    - Best New Newel
-    - Best Book
-    - Best Article
-    - Best New Newel
-    - Best New Newel
-    - Best Book
-    - Best Article
-    - Best New Newel
-    - Best Book
+    - Diseñador Web UX / UI
+    - Desarrollo 3D Spline
+    - Desarrollo Web Django
+    - Desarrollo Web React 
+    - Desarrollo Móvil [Expo]
+    - Posicionamiento Web
+    - Diseño [Spline]
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi amet, ultrices scelerisue cras. Tincidunt hendrerit egestas venenatis risus sit nunc. Est esglit non in ipsum lect;aaus adipiscing et enim porttitor. Dui ultrices et volud eetpat nunc, turpis rutrum elit vestibululm ipsum. Arcu fringilla duis vitae mos dsdllis duicras interdum purus cursus massa metus. Acc umsan felaais, egsdvet nisi, viverra turpis fermentum sit suspf bafedfb ndisse fermentum consectetur. Facilisis feugiat trisique orci tempor sed masd fbsssa tristique ultrices sodales. Augue est sapien elementum facilisis. Enim tincidnt cras interdum purus ndisse. morbi quis nunc.
+Nacido en la pintoresca provincia de Santa Elena, Ecuador, a sus jóvenes 21 años, Alejandro encarna la promesa del espíritu emprendedor, la pasión por la tecnología y la moda. Desde temprana edad, siempre ha sentido un anhelo por hacer cosas excepcionales y un fuerte interés en los productos innovadores creados por las grandes compañías.
 
-Et dolor placerat tempus risus nunc urna, nunc a. Mattis viverra ut sapidaaen enim sed tortor. Mattis gravida fusce cras interdum purus cursus massa metus. Acc umsan felaais, eget nisi, viverra turpis fermentum sit suspf bafedfb ndisse. morbi quis nunc, at arcu quam facilisi. In in lacus aliquam dictum sagittis morbi odio. Et magnis cursus sem sed condimentum. Nibh non potenti ac amsdfet Tincidunt hendrerit egestas venenatis risus sit nunc. Est esglit non in ipsuasdm lect;aaus adipiscing et enim porttitor. Dui ultrices et volud eetpat nunc, turpis ndisse. morbi quis nunc, at arcu quam facilisi ndisse. morbi quis nunc, at arcu quam facilisi
+Su pasión por la tecnología y la moda lo llevó a soñar en grande. Alejandro aspira a convertirse en un tester de los productos más emocionantes que las empresas líderes como Amazon, Ebay, Walmart, Shein, Google, Razer, Asus y Apple tienen para ofrecer. Sin embargo, no se detiene ahí. En un mundo donde las personas buscan constantemente las últimas tendencias, Alejandro ha dado un paso al frente. Ha creado un blog dedicado a recopilar y compartir los 10 productos más destacados de estas empresas por dia y semana, y guiándolos hacia las páginas oficiales para que puedan adquirir estos productos vanguardistas.

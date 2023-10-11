@@ -7,7 +7,7 @@ banner:
   image: /images/heroimage.png
   button:
     enable: true
-    label: Sobre Nosotros
+    label: Sobre el Autor
     link: /about
     rel: ""
 

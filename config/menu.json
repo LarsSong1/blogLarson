@@ -5,12 +5,12 @@
       "url": "/"
     },
     {
-      "name": "Sobre Nosotros",
+      "name": "Sobre el Autor",
       "url": "/about"
     },
    
     {
-      "name": "Contact",
+      "name": "Contacto",
       "url": "/contact"
     }
   ],

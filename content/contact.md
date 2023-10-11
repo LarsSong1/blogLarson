@@ -1,20 +1,20 @@
 ---
-title: "Let’s, Talk </br> About You"
+title: "Contactame </br> Aqui"
 description: "meta description"
-phone: "+211234565523"
-mail: "info@email.com"
-location: "9567 Turner Trace Apt. BC C3G8A4"
+phone: "+593 967 1854 60"
+mail: "damianalejandrofirst@gmail.com"
+location: "Chimborazo y Augusto Fajardo, Ecuador"
 form_action: "#"
 layout: "contact"
 addresses:
   - icon: FaUserAlt
-    content: +211234565523
-    link: tel:+211234565523
+    content: +593 967 185 460
+    link: tel:+593967185460
   - icon: FaMapMarkerAlt
-    content: info@email.com
-    link: mailto:info@email.com
+    content: damianalejandrofirst@gmail.com
+    link: mailto:damianalejandrofirst@gmail.com
   - icon: FaLocation
-    content: 9567 Turner Trace Apt. BC C3G8A4
+    content: Chimborazo y Augusto Fajardo, Ecuador
 
 draft: false
 ---
