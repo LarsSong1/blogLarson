@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaEnvelope } from "react-icons/fa";
+import Sonner from "sonner";
 
 function CustomForm({ status, message, onValidated }) {
   const [email, setEmail] = useState("");
@@ -14,6 +15,9 @@ function CustomForm({ status, message, onValidated }) {
     resetForm();
   };
 
+
+
+
   return (
     <>
       <form action="#" className="py-6" onSubmit={handleSubmit}>
@@ -21,13 +25,13 @@ function CustomForm({ status, message, onValidated }) {
           <input
             className="newsletter-input form-input h-12 w-full rounded-3xl border-none bg-theme-light px-5 py-3 pr-12 text-dark placeholder:text-xs dark:bg-darkmode-theme-dark"
             type="text"
-            placeholder="Type And Hit Enter"
+            placeholder="Ingresa tu correo"
             onChange={(e) => setEmail(e.target.value)}
           />
           <FaEnvelope className="absolute top-1/2 right-5 -translate-y-1/2 text-xl transition duration-75" />
         </fieldset>
         <button className="d-block  btn btn-primary mt-4 w-full" type="submit">
-          Sign In
+          Suscribirse
         </button>
       </form>
       {status === "sending" && (
@@ -40,7 +44,7 @@ function CustomForm({ status, message, onValidated }) {
         />
       )}
       {status === "success" && (
-        <div className="mt-4 text-green-700">Subscribed !</div>
+        <div className="mt-4 text-green-700">Suscrito!</div>
       )}
     </>
   );

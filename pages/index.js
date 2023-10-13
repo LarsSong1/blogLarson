@@ -42,18 +42,34 @@ const Home = ({
           height={295}
           alt="banner-shape"
           priority
+
         />
 
         <div className="container">
           <div className="row flex-wrap-reverse items-center justify-center lg:flex-row">
-            <div className={banner.image_enable ? "mt-12 text-center lg:mt-0 lg:text-left lg:col-6" : "mt-12 text-center lg:mt-0 lg:text-left lg:col-12"}>
-              <div className="banner-title">
+            <div className={banner.image_enable ? "mt-12 text-center lg:mt-0 lg:text-left lg:col-6" : "mt-12 text-center lg:mt-0 lg:text-left lg:col-12"}
+
+            >
+              <div className="banner-title"
+                data-aos="fade-right"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false">
                 {markdownify(banner.title, "h1")}
                 {markdownify(banner.title_small, "span")}
               </div>
-              {markdownify(banner.content, "p", "mt-4")}
+              <p data-aos="fade-right"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false">
+                {markdownify(banner.content, "mt-4")}
+              </p>
               {banner.button.enable && (
                 <Link
+                  data-aos="fade-right"
+                  data-aos-duration="1900"
+                  data-aos-easing="ease-in-out"
+                  data-aos-once="false"
                   className="btn btn-primary mt-6"
                   href={banner.button.link}
                   rel={banner.button.rel}
@@ -63,7 +79,12 @@ const Home = ({
               )}
             </div>
             {banner.image_enable && (
-              <div className="col-9 lg:col-6">
+              <div className="col-9 lg:col-6"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
+              >
                 <ImageFallback
                   className="mx-auto object-contain"
                   src={banner.image}
@@ -85,16 +106,20 @@ const Home = ({
           <ul className="row">
             <h2 className="section-title">Filtros</h2>
             {categories.map((category, i) => (
-              <li
+              <li data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-once="false"
+
                 key={`category-${i}`}
                 className="mt-4 block lg:col-4 xl:col-3"
               >
-                
+
                 <Link
                   href={`/categories/${category.name}`}
                   className="flex w-full items-center justify-center rounded-lg bg-orange-200 px-4 py-4 font-bold text-dark transition hover:bg-primary hover:text-white  dark:bg-zinc-800 dark:text-darkmode-light dark:hover:bg-primary dark:hover:text-white"
                 >
-                  
+
 
                   {humanize(category.name)} ({category.posts})
                 </Link>
@@ -107,7 +132,12 @@ const Home = ({
               {featured_posts.enable && (
                 <div className="section">
                   {markdownify(featured_posts.title, "h2", "section-title")}
-                  <div className="rounded border border-border p-6 dark:border-darkmode-border">
+                  <div className="rounded border border-border p-6 dark:border-darkmode-border"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-once="false"
+                  >
                     <div className="row">
                       <div className="md:col-6">
                         <Post post={featuredPosts[0]} />
@@ -170,7 +200,12 @@ const Home = ({
               {recent_posts.enable && (
                 <div className="section pt-0">
                   {markdownify(recent_posts.title, "h2", "section-title")}
-                  <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border">
+                  <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border"
+                  data-aos="fade-right"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  data-aos-once="false"     
+                  >
                     <div className="row">
                       {sortPostByDate.slice(0, showPosts).map((post) => (
                         <div className="mb-8 md:col-6" key={post.slug}>

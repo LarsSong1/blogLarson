@@ -26,7 +26,12 @@ const Contact = ({ data }) => {
               "h1 my-10 lg:my-11 lg:pt-11 text-center lg:text-left lg:text-[64px]"
             )}
           </div>
-          <div className="contact-form-wrapper rounded border border-border p-6 dark:border-darkmode-border lg:col-6">
+          <div className="contact-form-wrapper rounded border border-border p-6 dark:border-darkmode-border lg:col-6"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
+          >
             <h2>
               Enviame un
               <span className="ml-1.5 inline-flex items-center text-primary">
@@ -107,7 +112,12 @@ const Contact = ({ data }) => {
         </div>
         <div className="row">
           {phone && (
-            <div className="md:col-6 lg:col-4">
+            <div className="md:col-6 lg:col-4"
+              data-aos="fade-up"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+            >
               <Link
                 href={`tel:${phone}`}
                 className="my-4 flex h-[100px] items-center justify-center
@@ -121,7 +131,12 @@ const Contact = ({ data }) => {
             </div>
           )}
           {mail && (
-            <div className="md:col-6 lg:col-4">
+            <div className="md:col-6 lg:col-4"
+              data-aos="fade-up"
+              data-aos-duration="1700"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+            >
               <Link
                 href={`mailto:${mail}`}
                 className="my-4 flex h-[100px] items-center justify-center
@@ -135,7 +150,12 @@ const Contact = ({ data }) => {
             </div>
           )}
           {location && (
-            <div className="md:col-6 lg:col-4">
+            <div className="md:col-6 lg:col-4"
+              data-aos="fade-up"
+              data-aos-duration="1900"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
+            >
               <span
                 className="my-4 flex h-[100px] items-center justify-center
              rounded border border-border p-4 text-primary dark:border-darkmode-border"

@@ -6,6 +6,8 @@ import Head from "next/head";
 import { useEffect, useState } from "react";
 import TagManager from "react-gtm-module";
 import "styles/style.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 
 const App = ({ Component, pageProps }) => {
   // default theme setup
@@ -34,6 +36,13 @@ const App = ({ Component, pageProps }) => {
         TagManager.initialize(tagManagerArgs);
     }, 5000);
     // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    // Inicializar AOS
+    AOS.init({
+      // Configura tus opciones AOS aquí (duración de las animaciones, ajustes de activación, etc.)
+    });
   }, []);
 
   return (
