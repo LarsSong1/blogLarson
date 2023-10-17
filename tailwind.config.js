@@ -87,5 +87,6 @@ module.exports = {
     require("tailwind-scrollbar"),
     require("@tailwindcss/forms"),
     require("tailwind-bootstrap-grid")({ generateContainer: false }),
+    require("daisyui"),
   ],
 };

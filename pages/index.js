@@ -70,7 +70,7 @@ const Home = ({
                   data-aos-duration="1900"
                   data-aos-easing="ease-in-out"
                   data-aos-once="false"
-                  className="btn btn-primary mt-6"
+                  className="btn btn-primary mt-6 pt-4 hover:bg-orange-800"
                   href={banner.button.link}
                   rel={banner.button.rel}
                 >
