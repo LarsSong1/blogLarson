@@ -93,10 +93,10 @@ const PostSingle = ({
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
                 <div className="w-full mb-16 mx-auto">
-                  <Link href={enlace} target="_blank" className="btn flex bg-orange-500 hover:bg-orange-700 mx-auto">
+                  <a href={enlace} target="_blank" className="btn flex bg-orange-500 hover:bg-orange-700 mx-auto">
                     <FaTruck color="white" />
                     <p className="text-white">Ir a comprar</p>
-                  </Link>
+                  </a>
                 </div>
                 {config.settings.InnerPaginationOptions.enableBottom && (
                   <InnerPagination posts={posts} date={date} />
