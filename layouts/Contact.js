@@ -1,31 +1,98 @@
 import { markdownify } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { BsArrowRightShort } from "react-icons/bs";
-import { FaEnvelope, FaMapMarkerAlt, FaUserAlt } from "react-icons/fa";
+import { FaCheck, FaEnvelope, FaMapMarkerAlt, FaUserAlt } from "react-icons/fa";
 import ImageFallback from "./components/ImageFallback";
 import emailjs from '@emailjs/browser'
 import { useRef } from "react";
+import { Toaster, toast } from "sonner";
 
 const Contact = ({ data }) => {
   const { frontmatter } = data;
   const { title, form_action, phone, mail, location } = frontmatter;
   const formulario = useRef()
 
-  const sendForm  = (e) =>{
+
+  const validateForm = () => {
+    let name = document.getElementById('nameField')
+    let nameError = document.getElementById('nameError')
+    console.log(nameError)
+    let email = document.getElementById('emailField')
+    let emailError = document.getElementById('emailError')
+    let message = document.getElementById('messageField')
+    let messageError = document.getElementById('messageError')
+    let city = document.getElementById('cityField')
+    let cityError = document.getElementById('cityError')
+
+    let valid = true;
+
+    if (name.value.trim() === '') {
+      nameError.classList.replace('opacity-0', 'opacity-100');
+      valid = false;
+    } else {
+      nameError.classList.replace('opacity-100', 'opacity-0');
+    }
+
+    if (email.value.trim() === '') {
+      emailError.classList.replace('opacity-0', 'opacity-100');
+      valid = false;
+    } else {
+      emailError.classList.replace('opacity-100', 'opacity-0');
+    }
+
+    if (message.value.trim() === '') {
+      messageError.classList.replace('opacity-0', 'opacity-100');
+      valid = false;
+    } else {
+      messageError.classList.replace('opacity-100', 'opacity-0');
+    }
+
+    if (city.value.trim() === '') {
+      cityError.classList.replace('opacity-0', 'opacity-100');
+      valid = false;
+    } else {
+      cityError.classList.replace('opacity-100', 'opacity-0');
+    }
+
+
+    // Validar otros campos si es necesario
+
+    return valid;
+  };
+
+  const sendForm = (e) => {
     e.preventDefault()
-    emailjs.sendForm('TopTenPr', 'template_8sq7uqs', formulario.current, '6SV7MIv3wLeQw068j')
-      .then((res)=>{
-          console.log(res.text)
-      }, (error)=>{
+    if (validateForm()){
+      emailjs.sendForm('TopTenPr', 'template_8sq7uqs', formulario.current, '6SV7MIv3wLeQw068j')
+      .then((res) => {
+        console.log(`${res.text} correcto`)
+        emailSent()
+
+      }, (error) => {
         console.log(error)
       })
+
+    }
     
+
+  }
+
+  const emailSent = () => {
+    return toast('Se ha enviado correctamente', {
+      icon: <FaCheck />,
+      description: 'Tu correa será contestado apenas sea leído',
+      duration: 5000,
+      position: 'top-center'
+    })
   }
 
   return (
     <section className="section lg:mt-16">
+      <Toaster toastOptions={{
+        style: { backgroundColor: '#000000', color: 'white' }
+      }} />
       <div className="container">
-        <div className="row relative pb-16">
+        <div className="row relative pb-16 ">
           <ImageFallback
             className="-z-[1] object-cover object-top"
             src={"/images/moda y tech.svg"}
@@ -122,20 +189,21 @@ const Contact = ({ data }) => {
                 value="Enviar"
               />
             </form> */}
-            <form class="w-full max-w-lg">
+            <form class="w-full max-w-lg" ref={formulario} onSubmit={sendForm}>
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
-                    Nombre 
+                    Nombre
                   </label>
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Alejandro" />
-                    <p class="text-red-500 text-xs italic">Please fill out this field.</p>
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nameField" type="text" placeholder="Alejandro" />
+                  <p class="text-red-500 text-xs opacity-0" id="nameError">Ingresa un Nombre</p>
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                     Correo Electrónico
                   </label>
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="ejemplo@gmail.com" />
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="emailField" type="text" placeholder="ejemplo@gmail.com" />
+                  <p class="text-red-500 text-xs opacity-0" id="emailError">Ingresa un correo</p>
                 </div>
               </div>
               <div class="flex flex-wrap -mx-3 mb-6">
@@ -143,19 +211,21 @@ const Contact = ({ data }) => {
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
                     Mensaje
                   </label>
-                  <textarea className="textarea appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Asunto" id="message"></textarea>
-                    <p class="">Hazme saber tu inquietud</p>
+                  <textarea className="textarea appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Asunto" id="messageField"></textarea>
+                  <p class="">Hazme saber tu inquietud</p>
+                  <p class="text-red-500 text-xs opacity-0" id="messageError">Escribe un mensaje</p>
                 </div>
               </div>
               <div class="flex flex-wrap -mx-3 mb-2">
                 <div class="w-full md:w-3/6 px-3 mb-6 md:mb-0">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
-                     País - Ciudad
+                    País - Ciudad
                   </label>
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-city" type="text" placeholder="Ecuador - Guayaquil" />
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="cityField" type="text" placeholder="Ecuador - Guayaquil" />
+                  <p class="text-red-500 text-xs opacity-0" id="cityError">Escribe un lugar</p>
                 </div>
               </div>
-              <button className="btn btn-active bg-amber-700 hover:bg-orange-800 text-black border-amber-50 hover:border-amber-100 mt-4">Enviar</button>
+              <button className="btn btn-active bg-amber-700 hover:bg-orange-800 text-black border-amber-50 hover:border-amber-100 mt-4" type="submit" >Enviar</button>
             </form>
           </div>
         </div>

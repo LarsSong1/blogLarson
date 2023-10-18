@@ -8,7 +8,7 @@ import { MDXRemote } from "next-mdx-remote";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
-import { FaRegCalendar, FaUserAlt } from "react-icons/fa";
+import { FaRegCalendar, FaTruck, FaUserAlt } from "react-icons/fa";
 import Post from "./partials/Post";
 import Sidebar from "./partials/Sidebar";
 import shortcodes from "./shortcodes/all";
@@ -24,7 +24,7 @@ const PostSingle = ({
   allCategories,
   relatedPosts,
 }) => {
-  let { description, title, date, image, categories } = frontmatter;
+  let { description, title, date, image, categories, enlace } = frontmatter;
   description = description ? description : content.slice(0, 120);
 
   const { theme } = useTheme();
@@ -92,6 +92,12 @@ const PostSingle = ({
                 <div className="content mb-16">
                   <MDXRemote {...mdxContent} components={shortcodes} />
                 </div>
+                <div className="w-full mb-16 mx-auto">
+                  <Link href={enlace} target="_blank" className="btn flex bg-orange-500 hover:bg-orange-700 mx-auto">
+                    <FaTruck color="white" />
+                    <p className="text-white">Ir a comprar</p>
+                  </Link>
+                </div>
                 {config.settings.InnerPaginationOptions.enableBottom && (
                   <InnerPagination posts={posts} date={date} />
                 )}
@@ -110,12 +116,13 @@ const PostSingle = ({
               posts={posts.filter((post) => post.slug !== slug)}
               categories={allCategories}
             />
+            
           </div>
         </div>
 
         {/* Related posts */}
         <div className="container mt-20">
-          <h2 className="section-title">Related Posts</h2>
+          <h2 className="section-title">Posts Relacionados</h2>
           <div className="row mt-16">
             {relatedPosts.slice(0, 3).map((post, index) => (
               <div key={"post-" + index} className="mb-12 lg:col-4">

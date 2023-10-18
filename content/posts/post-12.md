@@ -1,10 +1,11 @@
 ---
-title: "What is a Virtual Assistant"
-date: 2022-04-04T12:00:00Z
-image: /images/post/post-4.png
-categories: ["github"]
+title: "2021 Apple iPad de 10,2 pulgadas"
+date: 2023-10-17T12:00:00Z
+image: /images/post/2021 Apple iPad de 10,2 pulgadas.webp
+categories: ["youtube"]
 featured: true
 draft: false
+enlace: https://www.amazon.com/2021-Apple-iPad-pulgadas-Wi-Fi/dp/B09G9CJM1Z/ref=lp_16225007011_1_1?sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
@@ -20,6 +21,6 @@ Nam ut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
 
 ![alter-text](/images/post/post-1.png)
-*Example Caption*
+*Example Caption*   
 
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel ad consectetur ut aperiam. Itaque eligendi natus aperiam? Excepturi repellendus consequatur quibusdam optio expedita praesentium est adipisci dolorem ut eius!
