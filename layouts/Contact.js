@@ -80,7 +80,7 @@ const Contact = ({ data }) => {
   const emailSent = () => {
     return toast('Se ha enviado correctamente', {
       icon: <FaCheck />,
-      description: 'Tu correa será contestado apenas sea leído',
+      description: 'Tu correo será contestado apenas sea leído',
       duration: 5000,
       position: 'top-center'
     })
@@ -120,89 +120,20 @@ const Contact = ({ data }) => {
                 <BsArrowRightShort />
               </span>
             </h2>
-            {/* <form
-              className="contact-form mt-12"
-              method="POST"
-              action={form_action}
-            >
-              <div className="mb-6">
-                <label className="mb-2 block font-secondary" htmlFor="name">
-                  Nombre Completo
-                  <small className="font-secondary text-sm text-primary">
-                    *
-                  </small>
-                </label>
-                <input
-                  className="form-input w-full"
-                  name="name"
-                  type="text"
-                  placeholder="Alejandro P"
-                  required
-                />
-              </div>
-              <div className="mb-6">
-                <label className="mb-2 block font-secondary" htmlFor="email">
-                  Correo Electrónico
-                  <small className="font-secondary text-sm text-primary">
-                    *
-                  </small>
-                </label>
-                <input
-                  className="form-input w-full"
-                  name="email"
-                  type="email"
-                  placeholder="ejemplo@gmail.com"
-                  required
-                />
-              </div>
-              <div className="mb-6">
-                <label className="mb-2 block font-secondary" htmlFor="subject">
-                  Asunto
-                  <small className="font-secondary text-sm text-primary">
-                    *
-                  </small>
-                </label>
-                <input
-                  className="form-input w-full"
-                  name="subject"
-                  type="text"
-                  placeholder="Sobre el Blog"
-                  required
-                />
-              </div>
-              <div className="mb-6">
-                <label className="mb-2 block font-secondary" htmlFor="message">
-                  Mensaje
-                  <small className="font-secondary text-sm text-primary">
-                    *
-                  </small>
-                </label>
-                <textarea
-                  className="form-textarea w-full"
-                  placeholder="Hola Soy ‘X’ de………….."
-                  rows="7"
-                />
-              </div>
-              <input
-                className="btn btn-primary"
-                type="submit"
-                value="Enviar"
-              />
-            </form> */}
             <form class="w-full max-w-lg" ref={formulario} onSubmit={sendForm}>
               <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                     Nombre
                   </label>
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nameField" type="text" placeholder="Alejandro" />
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-red-500 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="nameField" type="text" placeholder="Alejandro" name="Nombre"/>
                   <p class="text-red-500 text-xs opacity-0" id="nameError">Ingresa un Nombre</p>
                 </div>
                 <div class="w-full md:w-1/2 px-3">
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
                     Correo Electrónico
                   </label>
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="emailField" type="text" placeholder="ejemplo@gmail.com" />
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="emailField" type="text" placeholder="ejemplo@gmail.com" name="Correo" />
                   <p class="text-red-500 text-xs opacity-0" id="emailError">Ingresa un correo</p>
                 </div>
               </div>
@@ -211,7 +142,7 @@ const Contact = ({ data }) => {
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="message">
                     Mensaje
                   </label>
-                  <textarea className="textarea appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Asunto" id="messageField"></textarea>
+                  <textarea className="textarea appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Asunto" id="messageField" name="Mensaje"></textarea>
                   <p class="">Hazme saber tu inquietud</p>
                   <p class="text-red-500 text-xs opacity-0" id="messageError">Escribe un mensaje</p>
                 </div>
@@ -221,7 +152,7 @@ const Contact = ({ data }) => {
                   <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-city">
                     País - Ciudad
                   </label>
-                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="cityField" type="text" placeholder="Ecuador - Guayaquil" />
+                  <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="cityField" type="text" placeholder="Ecuador - Guayaquil" name="Ciudad" />
                   <p class="text-red-500 text-xs opacity-0" id="cityError">Escribe un lugar</p>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 ---
 title: "2021 Apple iPad de 10,2 pulgadas"
 date: 2023-10-17T12:00:00Z
-image: /images/post/2021 Apple iPad de 10,2 pulgadas.webp
+image: /images/post/ipad.jpeg   
 categories: ["youtube"]
 featured: true
 draft: false
