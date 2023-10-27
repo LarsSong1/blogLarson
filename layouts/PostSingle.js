@@ -14,6 +14,7 @@ import Sidebar from "./partials/Sidebar";
 import shortcodes from "./shortcodes/all";
 const { disqus } = config;
 const { meta_author } = config.metadata;
+import { NextSeo } from "next-seo";
 
 const PostSingle = ({
   frontmatter,
@@ -37,6 +38,7 @@ const PostSingle = ({
 
   return (
     <Base title={title} description={description}>
+      
       <section className="section single-blog mt-6">
         <div className="container">
           <div className="row">

@@ -12,7 +12,7 @@ import { markdownify, humanize } from "@lib/utils/textConverter";
 import Link from "next/link";
 import { FaRegCalendar } from "react-icons/fa";
 const { blog_folder, pagination } = config.settings;
-
+import { NextSeo } from "next-seo";
 
 
 
@@ -40,7 +40,7 @@ const Home = ({
           src={"/images/banner-bg-shape.svg"}
           width={1905}
           height={295}
-          alt="banner-shape"
+          alt="banner-shape"  
           priority
 
         />

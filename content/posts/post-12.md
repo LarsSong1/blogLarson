@@ -6,6 +6,7 @@ categories: ["youtube"]
 featured: true
 draft: false
 enlace: https://www.amazon.com/2021-Apple-iPad-pulgadas-Wi-Fi/dp/B09G9CJM1Z/ref=lp_16225007011_1_1?sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
+description: 'Las mejores Tablets'
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.

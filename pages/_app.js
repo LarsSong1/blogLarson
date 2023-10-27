@@ -9,6 +9,7 @@ import "styles/style.scss";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
 
+
 const App = ({ Component, pageProps }) => {
   // default theme setup
   const { default_theme } = config.settings;
@@ -64,6 +65,7 @@ const App = ({ Component, pageProps }) => {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=5"
         />
+       
       </Head>
       <ThemeProvider attribute="class" defaultTheme={default_theme}>
         <Component {...pageProps} />
