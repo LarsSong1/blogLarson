@@ -13,6 +13,8 @@ import Link from "next/link";
 import { FaRegCalendar } from "react-icons/fa";
 const { blog_folder, pagination } = config.settings;
 import { NextSeo } from "next-seo";
+import { useEffect } from "react";
+import { toast, Toaster } from "sonner";
 
 
 
@@ -31,9 +33,16 @@ const Home = ({
   );
   const showPosts = pagination;
 
+  useEffect(() => {
+    setTimeout(() => {
+      toast('Ha sido creado')
+    }, 3000);
+  }, []);
+
   return (
     <Base>
       {/* Banner */}
+      <Toaster/>
       <section className="section banner relative pb-0">
         <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
@@ -201,7 +210,7 @@ const Home = ({
                 <div className="section pt-0">
                   {markdownify(recent_posts.title, "h2", "section-title")}
                   <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border"
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   data-aos-duration="1000"
                   data-aos-easing="ease-in-out"
                   data-aos-once="false"     

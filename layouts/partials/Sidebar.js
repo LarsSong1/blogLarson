@@ -26,7 +26,7 @@ const Sidebar = ({ posts, categories, className }) => {
     <aside className={`${className} px-0 lg:px-6 lg:col-4`}>
       {about.enable && (
         <div className="relative rounded border border-border p-6 text-center dark:border-darkmode-border"
-          data-aos="fade-left"
+          data-aos="fade-down"
           data-aos-duration="1500"
           data-aos-easing="ease-in-out"
           data-aos-once="false"
@@ -50,7 +50,7 @@ const Sidebar = ({ posts, categories, className }) => {
       {categories.enable && (
         <div className="mt-6 rounded border border-border p-6 dark:border-darkmode-border"
 
-          data-aos="fade-left"
+          data-aos="fade-down"
           data-aos-duration="1700"
           data-aos-easing="ease-in-out"
           data-aos-once="false"
@@ -98,7 +98,7 @@ const Sidebar = ({ posts, categories, className }) => {
       {/* featured widget */}
       {featured_posts.enable && (
         <div className="mt-6 rounded border border-border p-6 dark:border-darkmode-border"
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-duration="1900"
           data-aos-easing="ease-in-out"
           data-aos-once="false"
