@@ -18,6 +18,7 @@ import { toast, Toaster } from "sonner";
 
 
 
+
 const Home = ({
   banner,
   posts,
@@ -32,24 +33,25 @@ const Home = ({
     (post) => post.frontmatter.featured
   );
   const showPosts = pagination;
+  const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec elit imperdiet, finibus eros sit amet, convallis purus. Vestibulum laoreet nunc nec felis rutrum imperdiet. Maecenas auctor hendrerit augue. Sed molestie leo quis leo ullamcorper, sit amet suscipit nibh accumsan. Mauris eget ligula orci. In blandit erat ut urna laoreet pharetra. Aenean eu turpis non nulla scelerisque congue vel vitae est. Nam sit amet diam luctus, condimentum leo quis, laoreet dui'
 
   useEffect(() => {
     setTimeout(() => {
-      toast('Ha sido creado')
+      
     }, 3000);
   }, []);
 
   return (
     <Base>
       {/* Banner */}
-      <Toaster/>
+    
       <section className="section banner relative pb-0">
         <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
           src={"/images/banner-bg-shape.svg"}
           width={1905}
           height={295}
-          alt="banner-shape"  
+          alt="banner-shape"
           priority
 
         />
@@ -142,10 +144,10 @@ const Home = ({
                 <div className="section">
                   {markdownify(featured_posts.title, "h2", "section-title")}
                   <div className="rounded border border-border p-6 dark:border-darkmode-border"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  data-aos-once="false"
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
                   >
                     <div className="row">
                       <div className="md:col-6">
@@ -210,10 +212,10 @@ const Home = ({
                 <div className="section pt-0">
                   {markdownify(recent_posts.title, "h2", "section-title")}
                   <div className="rounded border border-border px-6 pt-6 dark:border-darkmode-border"
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-easing="ease-in-out"
-                  data-aos-once="false"     
+                    data-aos="fade-up"
+                    data-aos-duration="1000"
+                    data-aos-easing="ease-in-out"
+                    data-aos-once="false"
                   >
                     <div className="row">
                       {sortPostByDate.slice(0, showPosts).map((post) => (

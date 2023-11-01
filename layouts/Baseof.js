@@ -4,6 +4,7 @@ import Footer from "@partials/Footer";
 import Header from "@partials/Header";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import Modal from "./components/modal";
 
 const Base = ({
   title,
@@ -92,6 +93,7 @@ const Base = ({
       <Header />
       {/* main site */}
       <main>{children}</main>
+      <Modal/>
       <Footer />
     </>
   );
