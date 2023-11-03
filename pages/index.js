@@ -15,6 +15,7 @@ const { blog_folder, pagination } = config.settings;
 import { NextSeo } from "next-seo";
 import { useEffect } from "react";
 import { toast, Toaster } from "sonner";
+import Modal from "@layouts/components/modal";
 
 
 
@@ -33,18 +34,14 @@ const Home = ({
     (post) => post.frontmatter.featured
   );
   const showPosts = pagination;
-  const lorem = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec elit imperdiet, finibus eros sit amet, convallis purus. Vestibulum laoreet nunc nec felis rutrum imperdiet. Maecenas auctor hendrerit augue. Sed molestie leo quis leo ullamcorper, sit amet suscipit nibh accumsan. Mauris eget ligula orci. In blandit erat ut urna laoreet pharetra. Aenean eu turpis non nulla scelerisque congue vel vitae est. Nam sit amet diam luctus, condimentum leo quis, laoreet dui'
 
-  useEffect(() => {
-    setTimeout(() => {
-      
-    }, 3000);
-  }, []);
+
 
   return (
     <Base>
+      <Modal/>
       {/* Banner */}
-    
+      
       <section className="section banner relative pb-0">
         <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
@@ -112,6 +109,7 @@ const Home = ({
 
       {/* Home main */}
       <section className="section">
+        
         <div className="container">
           {/* filtros */}
           <ul className="row">

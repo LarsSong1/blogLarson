@@ -93,7 +93,7 @@ const Base = ({
       <Header />
       {/* main site */}
       <main>{children}</main>
-      <Modal/>
+      
       <Footer />
     </>
   );

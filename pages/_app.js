@@ -8,7 +8,7 @@ import TagManager from "react-gtm-module";
 import "styles/style.scss";
 import AOS from 'aos';
 import 'aos/dist/aos.css'
-
+import '../styles/modal.css'
 
 const App = ({ Component, pageProps }) => {
   // default theme setup
