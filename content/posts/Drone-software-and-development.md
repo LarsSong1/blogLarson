@@ -5,6 +5,7 @@ image: /images/post/post-8.png
 categories: ["robotics"]
 featured: true
 draft: false
+description: 'Drone'
 ---
 
 Nemo vel ad consectetur namut rutrum ex, venenatis sollicitudin urna. Aliquam erat volutpat. Integer eu ipsum sem. Ut bibendum lacus vestibulum maximus suscipit. Quisque vitae nibh iaculis neque blandit euismod.
