@@ -2,7 +2,7 @@
 title: "2021 Apple iPad de 10,2 pulgadas"
 date: 2023-10-17T12:00:00Z
 image: /images/post/ipad.png   
-categories: ["youtube"]
+categories: ["amazon"]
 featured: true
 draft: false
 enlace: https://www.amazon.com/2021-Apple-iPad-pulgadas-Wi-Fi/dp/B09G9CJM1Z/ref=lp_16225007011_1_1?sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D
