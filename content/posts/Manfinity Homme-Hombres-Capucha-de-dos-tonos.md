@@ -26,7 +26,7 @@ La Manfinity Homme Hombres Capucha de dos tonos con cordón de shein es una capu
 - Diseño de dos tonos: el diseño de dos tonos es un toque de estilo que la hace única.
 - Cordón de ajuste: el cordón de ajuste en la capucha permite ajustar la capucha para un ajuste perfecto.
 
-![alter-text](/images/post/ebay.png)
+![alter-text](/images/post/shein.png)
 *A la venta en*
 
 La Manfinity Homme Hombres Capucha de dos tonos con cordón de shein es una capucha perfecta para los hombres que buscan una prenda elegante y versátil para cualquier ocasión. Está hecha de un material de alta calidad y tiene un diseño moderno. Si buscas una capucha que te haga lucir genial y te mantenga abrigado, esta es la indicada para ti.

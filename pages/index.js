@@ -37,11 +37,24 @@ const Home = ({
 
 
 
+  // useEffect(() => {
+  //   const textTruncate = document.getElementById('truncate');
+  //   if (textTruncate) {
+  //     const titulo = textTruncate.textContent;
+  //     if (titulo.length > 100 ) {
+  //       textTruncate.textContent = titulo.substring(0, 20) + "...";
+  //     }
+  //   }
+  // }, []);
+
+
+
+
   return (
     <Base>
-      <Modal/>
+      <Modal />
       {/* Banner */}
-      
+
       <section className="section banner relative pb-0">
         <ImageFallback
           className="absolute bottom-0 left-0 z-[-1] w-full"
@@ -109,7 +122,7 @@ const Home = ({
 
       {/* Home main */}
       <section className="section">
-        
+
         <div className="container">
           {/* filtros */}
           <ul className="row">
@@ -171,10 +184,11 @@ const Home = ({
                                 />
                               )}
                               <div>
-                                <h3 className="h5 mb-2">
+                                <h3 className="h5 mb">
                                   <Link
                                     href={`/${blog_folder}/${post.slug}`}
                                     className="block hover:text-primary"
+                                    id="truncate"
                                   >
                                     {post.frontmatter.title}
                                   </Link>
