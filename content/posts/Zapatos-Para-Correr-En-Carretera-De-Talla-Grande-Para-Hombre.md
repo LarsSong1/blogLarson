@@ -1,5 +1,5 @@
 ---
-title: "Llegada Nueva De Otoño 2023, Zapatos Para Correr En Carretera De Talla Grande Para Hombre Casuales Y De Moda, Transpirables Y Resistentes Al Desgaste, Con Parte Superior Tejida"
+title: "Llegada Nueva De Otoño 2023, Zapatos Para Correr En Carretera De Talla Grande Para Hombre Casuales Y De Moda"
 date: 2023-11-05T06:00:00Z
 image: /images/post/zapatoscorrer.png
 categories: ["shein"]

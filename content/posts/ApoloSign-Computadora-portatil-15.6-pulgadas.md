@@ -1,5 +1,5 @@
 ---
-title: "ApoloSign Computadora portátil de 15.6 pulgadas, procesadores Intel Celeron N5095 de cuatro núcleos, DDR4 de 12 GB, SSD de 512 GB, pantalla FHD de 1080P, computadoras portátiles Windows 11, ultra delgado, ángulo abierto de 170°, batería de larga duración"
+title: "ApoloSign Computadora portátil de 15.6 pulgadas, pantalla FHD de 1080P"
 date: 2023-11-05T06:00:00Z
 image: /images/post/apolosigncomputadora.png
 categories: ["amazon"]

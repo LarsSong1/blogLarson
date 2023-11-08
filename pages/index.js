@@ -37,16 +37,15 @@ const Home = ({
 
 
 
-  // useEffect(() => {
-  //   const textTruncate = document.getElementById('truncate');
-  //   if (textTruncate) {
-  //     const titulo = textTruncate.textContent;
-  //     if (titulo.length > 100 ) {
-  //       textTruncate.textContent = titulo.substring(0, 20) + "...";
-  //     }
-  //   }
-  // }, []);
-
+  useEffect(() => {
+    const textTruncate = document.getElementById('truncate');
+    if (textTruncate) {
+      const titulo = textTruncate.textContent;
+      if (titulo.length > 40 ) {
+        textTruncate.textContent = titulo.substring(0, 40) + "...";
+      }
+    }
+  }, []);
 
 
 

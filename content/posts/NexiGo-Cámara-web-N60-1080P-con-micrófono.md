@@ -1,5 +1,5 @@
 ---
-title: "NexiGo Cámara web N60 1080P con micrófono, FOV ajustable, zoom, control de software y cubierta de privacidad, cámara web USB HD para computadora, Plug and Play, para Zoom/Skype/Equipos, conferencias y videollamadas"
+title: "NexiGo Cámara web N60 1080P con micrófono, FOV ajustable, zoom, control de software y cubierta de privacidad"
 date: 2023-11-05T06:00:00Z
 image: /images/post/camaranexigo.png
 categories: ["amazon"]

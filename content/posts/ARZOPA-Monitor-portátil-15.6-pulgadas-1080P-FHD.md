@@ -1,5 +1,5 @@
 ---
-title: "ARZOPA Monitor portátil, 15.6 pulgadas 1080P FHD monitor portátil USB C HDMI pantalla de computadora HDR cuidado ocular pantalla externa con cubierta inteligente para PC, Mac, teléfono, Xbox Switch PS5-S1 mesa"
+title: "ARZOPA Monitor portátil, 15.6 pulgadas 1080P FHD monitor portátil"
 date: 2023-11-05T06:00:00Z
 image: /images/post/arzopamonitorportatil.png
 categories: ["amazon"]
