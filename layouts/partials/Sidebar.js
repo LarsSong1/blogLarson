@@ -107,14 +107,14 @@ const Sidebar = ({ posts, categories, className }) => {
           <h4 className="section-title mb-12 text-center">Posts del blog</h4>
           <div className="mb-12 flex items-center justify-center">
             <button
-              className={`btn px-5 py-2 ${showRecent ? "btn-outline-primary" : "btn-primary"
+              className={`btn px-5 py-2 ${showRecent ? "btn-outline-primary hover:bg-orange-900 active:bg-orange-900" : "btn-primary  hover:bg-orange-900"
                 }`}
               onClick={() => setShowRecent(false)}
             >
               Destacados
             </button>
             <button
-              className={`btn ml-3  px-5 py-2 ${showRecent ? "btn-primary" : "btn-outline-primary"
+              className={`btn ml-3  px-5 py-2 ${showRecent ? "btn-primary hover:bg-orange-900 active:bg-orange-900" : "btn-outline-primary"
                 }`}
               onClick={() => setShowRecent(true)}
             >
