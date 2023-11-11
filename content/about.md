@@ -1,6 +1,6 @@
 ---
 title: Sobre el Autor
-image: /images/author.png
+image: /images/alejandro.png
 description: "meta description"
 layout: about
 education:
