@@ -35,7 +35,7 @@ const About = ({ data }) => {
 
         <div className="row mt-24 text-left lg:flex-nowrap">
           <div className="lg:col-6 "
-           data-aos="fade-right"
+           data-aos="fade-up"
            data-aos-duration="1000"
            data-aos-easing="ease-in-out"
            data-aos-once="false"
@@ -55,7 +55,7 @@ const About = ({ data }) => {
             </div>
           </div>
           <div className="experience mt-10 lg:mt-0 lg:col-6"
-           data-aos="fade-left"
+           data-aos="fade-up"
            data-aos-duration="1000"
            data-aos-easing="ease-in-out"
            data-aos-once="false"

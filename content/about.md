@@ -7,9 +7,9 @@ education:
   title: Educación Formal
   degrees:
     - university: "Unidad Educativa Otto Arosemena"
-      content: "1985 • 1991 • Escuela"
+      content: "2006 • 2013 • Escuela"
     - university: "Unidad Educativa Santa Elena"
-      content: "1985 • 2019 • Colegío"
+      content: "2013 • 2019 • Colegío"
     - university: "Universidad Estatal de Milagro"
       content: "2021 • 2025 • En curso"
    
